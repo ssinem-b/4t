@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About 4T4T - Design and Design History Society</title>
+    <title>Hakkında - Tasarım ve Tasarım Tarihi Topluluğu</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/site.css" />
     <script src="js/jquery-3.4.1.min.js"></script>
@@ -14,38 +14,15 @@
 </head>
 
 <body>
-
     <div class="top">
-        <div class="logo ">
-            <a href="index.html">
-                <img src="img/logo.svg" alt="" />
-            </a>
+        <div id="4tHeader">
+            <script>
+                $("#4tHeader").load("header_tr.html");
+            </script>
         </div>
-        <div class="news ">
-            <a href="" class="news_link">
-                <img src="img/news.svg" alt="" />
-            </a>
-
-            <div class="news_detail">
-
-                <b>Talk / "Design and Authority"</b><br />
-                Moderator:<br />
-                Erdem ERTEN, Izmir Institute of Technology / 4T <br />
-                Evren BAŞBUĞ, Studio Evren Başbuğ<br />
-                Murat ARIKUT, ma | d design and consulting<br />
-                Hasibe VELİBEYOĞLU, İzmir Metropolitan Municipality<br />
-                <br />
-                <b>20 October 2019 Saturday 11:00 <br />
-                    Good Design Izmir, Culturepark</b><br />
-                <a href="http://iyitasarimizmir.org/" target="_blank">http://iyitasarimizmir.org/</a>
-            </div>
-        </div>
-
     </div>
     <div class="left">
-
         <div class="menu">
-
             <ul>
                 <li>
                     <span class="left_link_container">
@@ -91,7 +68,6 @@
                         </li>
                     </ul>
                 </li>
-
                 <li>
                     <span class="left_link_container">
                         <a class="left_link" href="Membership.html">
@@ -100,9 +76,7 @@
                         </a>
                         <span class="menu_hover"> </span>
                     </span>
-
                 </li>
-
                 <li>
                     <span class="left_link_container">
                         <a class="left_link" href="Symposiums.html">
@@ -111,7 +85,6 @@
                         </a>
                         <span class="menu_hover"> </span>
                     </span>
-
                 </li>
                 <li>
                     <span class="left_link_container">
@@ -121,7 +94,6 @@
                         </a>
                         <span class="menu_hover"> </span>
                     </span>
-
                 </li>
             </ul>
         </div>
@@ -132,18 +104,39 @@
                 $("#social").load("social.html");
             </script>
         </div>
-
     </div>
-
     <div class="content">
 
 
-        <div class="hi_container">
-            <span class="hi_txt">Hi!</span>
+        <div class="subpg_container">
+            <div class="about_hi">
+                Hi!
+            </div>
+            <div class="about_content">
+                <p>
+                    Turkish Design History Society is a platform that was informally
+                    established at a meeting held at İzmir University of Economics on August 11, 2004.
+                    Initially founded as an informal platform, the Society was subsequently formalized
+                    on June 2, 2014 with the application made by a group of 25 founding members who were
+                    all designers, academics and researchers carrying out their annual
+                    symposium activities under the title of 5T: Turkish Design History Society at
+                    Yaşar University between the years 2011-2014. As naming the Society “Turkish”
+                    required an exceptional application, a fresh title was adopted and it began to
+                    operate under the name of 4T Design and Design History Society Association.
+                </p>
+            </div>
         </div>
+
+
 
         <div class="left_menu_overlay"></div>
     </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/about.js?v=ir_R4nrHTKze5rrlzm1WF1TECElnghgPIJhtGFz6udw"></script>
+
 </body>
 
 </html>
