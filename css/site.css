@@ -1,0 +1,456 @@
+﻿@font-face {
+    font-family: 'bahnschrift';
+    src: url('../font/bahnschrift.ttf') format('truetype');
+}
+
+body {
+    font-family: 'bahnschrift';
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #000;
+    }
+
+
+.container {
+    margin-left: 100px;
+    background-color: aqua;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 90px;
+    height: 130px;
+    margin-bottom: 15px;
+    background-color:#fff;
+}
+
+.left {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 145px;
+    width: 200px;
+    padding: 60px 10px;
+    margin-right: 15px;
+}
+
+.right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75px;
+    bottom: 0;
+    margin-left: 15px
+}
+
+.social {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+    .social ul {
+        padding: 30px 0;
+    }
+
+        .social ul li {
+            margin: 20px 0;
+        }
+
+            .social ul li a img {
+                width: 30px;
+            }
+
+.logo {
+    float: left;
+}
+
+.news {
+    float: right;
+    text-align: right;
+    position: relative;
+}
+
+.logo img {
+    height: 130px;
+}
+
+.news img {
+    height: 130px;
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+    .menu > ul {
+        padding: 30px 0;
+        background: url("../img/e4.png") repeat-y center;
+    }
+
+        .menu > ul > li {
+            padding: 30px 0;
+            position: relative
+        }
+
+.left_link_sub > li {
+    padding: 7px 0;
+    position: relative
+}
+
+.left_link {
+    font-size: 1em;
+    letter-spacing:2px;
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+}
+
+.left_link_container {
+    display: inline-block;
+    position: relative;
+}
+
+.left_link:hover + .menu_hover {
+    /*display: block;*/
+    opacity: 1;
+}
+
+.menu_hover {
+    position: absolute;
+    display: block;
+    background-color: #E6E6E6;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin-top: -15px;
+    margin-left: 15px;
+}
+/*.menu_hover:hover {
+        opacity: 1
+    }*/
+.menu_txt {
+    position: relative;
+    z-index: 1;
+}
+
+
+.content {
+    /* border: 1px solid #e6e6e6; */
+    margin: 160px 90px auto 215px;
+    min-height: 80vh;
+    position: relative;
+    z-index: -1;
+}
+
+
+.hi_container {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hi_txt {
+    /*font-weight: bold;*/
+    opacity: 0;
+}
+
+.news_detail {
+    display: none;
+    background-color: #e6e6e6;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 150px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.news_link {
+    position: relative;
+    z-index: 1
+}
+
+.left_link_sub {
+    display: none;
+    position: absolute;
+    right: -175px;
+    top: 20px;
+    z-index: 2
+}
+
+.left_menu_overlay {
+    background-color: #ffffffed;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.left_link_sub_line {
+    position: absolute;
+    background: url(../img/e4.png) repeat-x center;
+    width: 100%;
+    height: 20px;
+    margin-top: 0;
+    display: none;
+}
+
+
+
+/* Container for subpages */
+.subpg_container {
+    /*width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);*/
+}
+
+
+/* about page */
+.about_hi {
+    margin-top:15%;
+    margin-left: 8.5%;
+    font-size: 9em;
+}
+
+.about_content {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+/* Executive Board */
+
+.exboard_page_title {
+    font-size: 2em;
+    letter-spacing: 3px;
+    margin-left: 300px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.exboard_item {
+    padding-bottom:25px;
+}
+
+.exboard_left {
+    float: left;
+    width: 250px;
+    position:relative;
+}
+
+.exboard_name {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: right;
+    position:relative;
+    z-index:1;
+}
+
+.exboard_title {
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-align: right;
+    position:relative;
+    z-index:1;
+}
+
+.exboard_cv {
+    margin-left: 300px;
+    font-size: 1em;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-align: justify;
+    padding-top: 1.5em;
+    padding-left: 5px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    position:relative;
+    z-index:1;
+}
+
+.exboard_art {
+    background-color:#e6e6e6;
+    height:3em;
+    width:150px;
+    position:absolute;
+    margin-top:-30px;
+    right:-100px;
+   
+}
+
+
+/*** former board members */
+.former_title {
+    font-size: 2em;
+    letter-spacing: 3px;
+    margin-left: 50px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.former_content {
+    text-align:center;
+}
+.former_content img {
+    width:80%;
+}
+
+/** founding members **/
+.founding_members {
+    text-align:center;
+   
+}
+
+.founding_members img {
+    width:80%;
+}
+
+.membership {
+    text-align: center;
+    margin-left:5%;
+    margin-top:30%;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+}
+
+.membership img {
+    width:100%;
+    height:100%;
+}
+
+
+/* symposium */
+
+.symposium {
+    position:absolute;
+}
+
+.sy_item {
+margin-left: 20px;
+    margin-top: 10px;
+    padding-bottom:25px;   
+}
+
+.sy_art {    
+    display: inline-block;
+    max-width: 300px;
+    vertical-align: top;
+
+}
+
+.sy_detail {
+    display: inline-block;
+    padding-top: 50px;
+    width: 70%;
+    padding-left: 20px;
+}
+.sy_title {
+    position: relative;
+} 
+
+.sy_name {
+    display: inline-block;
+    font-size: 2em;
+    letter-spacing: 2px;
+    padding-right: 15px;
+    
+}
+.sy_schedule {
+    display: inline-block;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    border-left: 2px solid gray;
+    padding-left: 15px;
+
+}
+
+.sy_speaker {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+}
+.sy_keynote_label {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-size: 1.1em;
+}
+.sy_speaker_name {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.sy_content {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-align: justify;
+    padding-top: 1.5em;
+    padding-left: 5px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+}
+/* activity */
+.act_item {
+    margin-top: 75px;
+    margin-left: 20%;
+}
+
+.act_title {
+    background-image: url(../img/actico.svg);
+    background-repeat: no-repeat;
+    font-size: 1.7em;
+    padding-left:1em;
+}
+
+.act_content {
+    margin-top: 15px;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    line-height: 2;
+    word-spacing: 2px;
+}
