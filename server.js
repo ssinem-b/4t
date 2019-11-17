@@ -1,7 +1,13 @@
 var express = require('express');
 var app = express();
-
-app.use(express.static('/Users/selim/Code/WebDesign/4T/4t'));
-
+/*
+const csp = require('express-csp-header');
+app.use(csp({
+    policies: {
+        'script-src': [csp.NONCE]
+    }
+}));
+*/
+app.use(express.static(__dirname + '/'));
 app.listen('3000');
-console.log('working on 3000');
+console.log('working on 3000');7
